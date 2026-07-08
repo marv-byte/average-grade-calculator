@@ -14,4 +14,3 @@ This tool allows you to calculate your average grades. It is designed for multip
 
 ## Future improvements
 * **Custom name:** Giving every calculation a custom name in the storage.
-* **Dividing by 0 protection:** Catching instances where the user enters `0` subjects.
