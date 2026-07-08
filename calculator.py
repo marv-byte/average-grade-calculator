@@ -5,13 +5,15 @@ while True:
     try:
         print("\n\nCalculate your average grade")
         print("(Only works with number-based grades!)")
-        amount = input("\nHow many subjects do you have? ")
+        amount = input("\nHow many subjects do you have? ").strip()
         if amount == "end":
             print("------Storage------")
             for key, value in storage.items():
                 print(key," -> ", value)
             print("-------------------")    
             break
+        elif amount == "0":
+            print("\nYou need to have at least 1 subject!")
         else:
             amount = int(amount)
             for i in range(0,amount):
