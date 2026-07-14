@@ -19,10 +19,14 @@ while True:
             for i in range(0,amount):
                 grade += int(input("Add a grade "))
             average = grade/amount
-            storage[f"run{current}"] = average
-            current += 1
+            
             print("\n-------------------------------")    
             print("Your average is: ",average)
             print("-------------------------------") 
+            save = input("If you want to save the average, please enter a name for the save (otherwise leave empty)")
+            if save.strip() == "":
+                continue
+            else:
+                storage[save] = average
     except:
         print("\nError")
